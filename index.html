@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightingale Facts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nightingale Facts</h1>
+        <ul id="facts-list"></ul>
+    </div>
+    <script>
+        const facts = [
+            "Nightingales are known for their beautiful and powerful song, which is often heard at night.",
+            "They are small birds, typically measuring about 15-16 cm in length.",
+            "Nightingales are migratory birds, breeding in Europe and Asia and wintering in Africa.",
+            "The male nightingale is the one that sings, often to attract a mate and defend its territory.",
+            "Nightingales have been celebrated in literature and poetry for centuries, symbolizing love and beauty.",
+            "They have a varied diet that includes insects, worms, and berries.",
+            "Nightingales are known for their ability to mimic the songs of other birds and even mechanical sounds.",
+            "These birds are mostly solitary and prefer to sing from hidden perches.",
+            "Nightingales can sing up to 300 different variations of their song.",
+            "They are nocturnal singers, often performing their songs during the night, especially in spring."
+        ];
+
+        const factsList = document.getElementById('facts-list');
+
+        facts.forEach(fact => {
+            const li = document.createElement('li');
+            li.textContent = fact;
+            factsList.appendChild(li);
+        });
+    </script>
+</body>
+</html>
